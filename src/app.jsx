@@ -1,14 +1,23 @@
-import styles from './index.scss';
 import React from 'react';
+import { Router, Route, Link, browserHistory } from 'react-router';
+
+import Grid from './grid/grid.jsx';
+import Components from './components/components.jsx';
+import NoMatch from './nomatch.jsx';
+import Layout from './layout.jsx';
+import Slideshow from './slideshow.jsx';
 
 export default class App extends React.Component {
   render() {
-    return (
-      <div>
-        <h1>It Works!</h1>
-        <p>This React project just works including <span className={styles.redBg}>module</span> local styles.</p>
-        <p>Enjoy!</p>
-      </div>
-    )
+    return(
+      <Router history={browserHistory}>
+          {/* <IndexRoute path="/" component={Slideshow} /> */}
+          {/* add to package.json maybe --history-api-fallback */}
+          <Route path="/" component={Slideshow} />
+          <Route path="grid" component={Grid} />
+          <Route path="components" component={Components} />
+          <Route path="*" component={NoMatch}/>
+      </Router>
+    );
   }
 }

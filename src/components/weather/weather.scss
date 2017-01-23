@@ -1,0 +1,73 @@
+@import '../../variables';
+
+.weatherTab {
+  position: relative;
+  bottom: -200px;
+
+  // background: $white;
+  background: $beige;
+  // padding: 11px !important;
+  color: $darkblue;
+// .react-tabs [role=tab]:focus:after
+  li,
+  li [role=tab][aria-selected=true] {
+    width: 33.3333%;
+    padding: 0 !important;
+    margin: 0;
+    height: 50px;
+    border: none !important;
+    background: transparent !important;
+  }
+  li [role=tab]:focus:after,
+  li [role=tab]:focus
+  li [role=tab][aria-selected=true]:focus,
+  li [role=tab][aria-selected=true]:focus:after {
+    background: transparent !important;
+  }
+
+  img {
+    width: 100%;
+    max-width: 26px;
+    display: block;
+    margin: 4px auto auto auto;
+  }
+  span {
+    font-size: 12px;
+    text-align: center;
+    width: 100%;
+    margin-top: 2px;
+    display: block;
+  }
+}
+
+.weatherIcon {
+  width: 100%;
+  max-width: 54px;
+}
+
+.weatherTabPanel {
+  font-size: 54px;
+  font-family: 'Anton', sans-serif;
+  // background: $blue;
+  // background: $darkblue;
+  background: $darkpurple;
+  // background: $teal;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.weatherRoot {
+  // margin-top: -20px;
+  // margin-top: -42px;
+  margin-top: -40px;
+}
+
+// Icons for preview
+.weatherIcons {
+  lost-flex-container: row;
+  margin-top: 70px;
+  .weatherIconsCol {
+    lost-column: 1/4 4 10px flex;
+    img { width: 100%; }
+  }
+}

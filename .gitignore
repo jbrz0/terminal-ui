@@ -1,6 +1,7 @@
 # Logs
 logs
 *.log
+# TODO.md
 
 # Runtime data
 pids
@@ -26,5 +27,5 @@ build/Release
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
 node_modules
 
-# Ignore build files
-public
+# Ignore build files - keep build files for now, using static CSS for dropdown
+# public

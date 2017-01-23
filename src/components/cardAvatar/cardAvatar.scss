@@ -1,0 +1,51 @@
+@import '../../variables';
+
+.cardAvatarWrap {
+  background: $lightpurple;
+  padding-bottom: 10px;
+  p {
+    color: $darkblue;
+    margin: 10px;
+    font-size: 13px;
+    line-height: 18px;
+    max-width: 500px;
+  }
+  .actionBtn {
+    background: $yellow;
+    margin: 10px;
+    color: $darkblue;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-bottom: 0px;
+    &:hover {
+      background: $blue;
+      color: $white;
+    }
+  }
+}
+
+.cardAvatarTitle {
+  color: $darkblue;
+  font-size: 13px;
+  margin-left: 70px;
+  padding-top: 24px;
+}
+
+.cardAvatar {
+  width: 100%;
+  max-width: 50px;
+  border-radius: 100px;
+  margin-left: 10px;
+  margin-top: 10px;
+  float: left;
+}
+
+.cardDisplayImg {
+  width: 100%;
+  height: 200px;
+  background-position: center center;
+  background-size: cover;
+  margin-top: 27px;
+}

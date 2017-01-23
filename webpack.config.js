@@ -76,5 +76,10 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			template: './src/template.html'
 		}),
+		new webpack.DefinePlugin({
+			"process.env": {
+				BROWSER: JSON.stringify(true)
+			}
+		})
 	]
 };

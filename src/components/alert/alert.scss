@@ -1,0 +1,32 @@
+@import '../../variables';
+
+.alertWrap {
+  padding: 20px 20px 48px 20px;
+  background: $red;
+  text-align: center;
+  color: $white;
+  margin-top: 20px;
+  .alertBtn {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba($beige, 0.6);
+    padding: 5px 10px 5px 10px;
+    color: $white;
+    font-size: 0.85em;
+    margin: auto 4px;
+    text-decoration: none;
+    &:hover {
+      background: rgba($beige, 0.4);
+    }
+  }
+}
+
+.alertCloseLink {
+  color: $white;
+}
+
+.alertClose {
+  float: right;
+  margin-top: -10px;
+  margin-right: -8px;
+}

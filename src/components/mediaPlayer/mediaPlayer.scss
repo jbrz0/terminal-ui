@@ -1,0 +1,66 @@
+@import '../../variables';
+
+.mediaPlayerRoot {
+  margin-top: 20px;
+  background: $darkpurple;
+  padding: 10px;
+  overflow: auto;
+}
+
+.coverArt {
+  width: 100%;
+  max-width: 60px;
+  // border: 1px solid $white;
+  height: auto;
+  box-sizing: border-box;
+  float: left;
+}
+
+.mediaPlayerControls {
+  float: left;
+  margin-top: 17px;
+  margin-left: 17px;
+  clear: right;
+
+  a {
+    color: $white;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.mediaPlayerTop {
+  overflow: auto;
+  margin-bottom: -8px;
+}
+
+.sliderWrap {
+  width: 100%;
+}
+
+.mediaPlayerList {
+  width: 100%;
+  background: $beige;
+  height: 140px;
+  overflow: scroll;
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 0;
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 17px;
+  a {
+    color: $darkblue;
+    text-decoration: none;
+  }
+  li {
+    padding: 8px;
+    border-bottom: 1px solid black;
+
+    &:hover {
+      background: $darkblue;
+      color: $white;
+    }
+  }
+}

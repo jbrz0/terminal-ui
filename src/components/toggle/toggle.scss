@@ -1,0 +1,51 @@
+@import '../../variables';
+
+.toggleInput[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+.toggleLabel {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 100px;
+	height: 50px;
+	background: $darkpurple;
+	display: block;
+	border-radius: 100px;
+	position: relative;
+	margin-top: 2px;
+  // margin: auto;
+}
+
+.toggleLabel:after {
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 40px;
+	height: 40px;
+	background: $beige;
+	border-radius: 90px;
+}
+
+.toggleInput:checked + .toggleLabel {
+	background: $teal;
+}
+
+.toggleInput:checked + .toggleLabel:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+.toggleLabel:active:after {
+	width: 40px;
+}
+
+.toggleInputDisabled,
+.toggleLabelDisabled{
+	opacity: 0.6 !important;
+  // background: saturate( $darkpurple, 40% );
+  cursor: not-allowed;
+}

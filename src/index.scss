@@ -1,6 +1,57 @@
+@import './variables';
+
+// Globals
+h1, h2, h3 {
+  font-family: 'Anton', sans-serif;
+  // letter-spacing: 2px;
+}
+*, h4, h5, h6, p {
+  font-family: 'Jura', sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+*:focus {
+  outline: none !important;
+}
+
+html, body {
+  background: $darkblue;
+}
+
+body {
+  margin: 0;
+}
+
 .redBg {
     background-color: red;
     border-radius: 5px;
     color: white;
     padding: 5px;
+}
+
+.linkWrap {
+  margin-top: 30px;
+}
+
+.link {
+  color: $white;
+  text-decoration: underline;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.linkBox {
+  padding: 10px;
+  background: $teal;
+  color: $white;
+  text-decoration: none;
+
+  &:hover {
+    background: $blue;
+  }
 }

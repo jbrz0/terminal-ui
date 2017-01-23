@@ -1,0 +1,54 @@
+@import './variables';
+@import './grid/grid';
+@import './grid/gridBg';
+
+.gridIcon {
+  background: red;
+}
+
+.slideshowRoot {
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  display: block !important;
+  position: absolute !important;
+  left: 0 !important;
+  right: 0 !important;
+  margin: auto !important;
+}
+
+.slideshowWrapTop {
+  margin-top: 62px !important;
+  margin-bottom: 0 !important;
+}
+
+.slideshowHeaderBg {
+  display: block !important;
+  margin: auto !important;
+}
+.slideshowGridHeader {
+  width: 100% !important;
+  display: block !important;
+  margin: auto !important;
+  margin-left: 0 !important;
+}
+
+.slideshowGridWrap {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-top: 28px;
+
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.blueBg {
+  background: $blue !important;
+  padding: 30px;
+  padding-bottom: 190px;
+}
+
+.slideshowDownload {
+  background: $darkpurple !important;
+}

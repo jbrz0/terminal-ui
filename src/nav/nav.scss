@@ -1,0 +1,68 @@
+@import '../variables';
+
+.navWrap {
+  // background: $beige;
+  background: #FBF5F3;
+  width: 100%;
+  max-width: 300px;
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  z-index: 11;
+}
+
+.menuLink {
+  cursor: pointer;
+}
+
+.logoNav {
+  width: 100%;
+  max-width: 160px;
+  margin: 10px 8px 8px 10px;
+}
+
+.logoMenu {
+  float: right;
+  position: relative;
+  right: 0;
+  // background: red;
+  padding: 26px;
+}
+
+.navMenuOpen {
+  display: none;
+  background: $darkpurple;
+  width: 100%;
+  // height: 200px;
+  width: 300px;
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  z-index: 10;
+  padding-top: 90px;
+}
+
+.active {
+  display: block;
+}
+
+.navList {
+  color: white;
+  list-style-type: none;
+  margin-bottom: 40px;
+
+  a {
+    color: $white;
+    text-decoration: none;
+    // display: inline-block;
+  }
+  li {
+    margin-bottom: 10px;
+    span {
+      color: $teal;
+    }
+  }
+  a:hover, a:hover li span {
+    color: $yellow;
+  }
+}

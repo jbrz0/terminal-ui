@@ -1,0 +1,24 @@
+@import '../../variables';
+
+.cardPhotoShortWrap {
+  margin-top: 20px;
+}
+
+.cardPhotoShortImg {
+  height: 100%;
+  min-height: 100px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  padding: 20px 15px 20px 20px;
+  h2 {
+    font-size: 18px;
+    text-shadow: 2px 2px $darkblue;
+  }
+}
+
+.cardPhotoShortText {
+  background: $beige;
+  padding: 20px 15px 20px 20px;
+  color: $darkblue;
+}

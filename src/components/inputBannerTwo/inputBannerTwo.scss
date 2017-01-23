@@ -1,0 +1,36 @@
+@import '../../variables';
+
+.inputBannerTwoRoot {
+  margin-top: 145px;
+  background: $beige;
+}
+
+.inputBannerHeader {
+  color: $darkblue;
+  padding: 30px 15px;
+  margin-bottom: -50px;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.inputBannerSubmit {
+  float: right;
+  background: $teal;
+  padding: 10px 20px 10px 20px;
+  position: relative;
+  top: -36px;
+  color: $white;
+  text-decoration: none;
+  &:hover {
+    background: $blue;
+  }
+}
+
+.inputBannerTwoImg {
+  width: 100%;
+  max-width: 200px;
+  display: block;
+  margin: auto;
+  padding-bottom: 25px;
+}

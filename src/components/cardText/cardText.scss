@@ -1,0 +1,15 @@
+@import '../../variables';
+
+.cardTextWrap {
+  background: $darkpurple;
+  margin-top: 20px;
+  padding: 20px 15px 20px 20px;
+  h2 {
+    font-size: 18px;
+  }
+}
+
+.cardTextInner {
+  font-size: 16px;
+  max-width: 220px;
+}

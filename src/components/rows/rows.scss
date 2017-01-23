@@ -1,0 +1,55 @@
+@import '../../variables';
+
+.accordion {
+	background: $beige;
+	border-bottom-width: 0;
+  margin-top: 20px;
+}
+.accordionSection {
+	// border-bottom: solid 1px #000;
+}
+
+.accordionSection > h3 {
+	padding: 6px 6px 6px 10px;
+	font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+	background-color: $darkpurple;
+  margin: 0;
+  color: $white;
+  cursor: pointer;
+}
+.accordionSection > .body {
+    height: 0;
+    padding: 0 10px;
+    overflow-y: hidden;
+    transition: height .5s;
+    transition: height .5s, padding-top .5s, padding-bottom .5s;
+}
+.accordionSection.selected > .body {
+  height: 100px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+// .selected h3 {
+//   color: $darkblue !important;
+// }
+
+.sectionSelectTitle {
+  padding: 6px 6px 6px 10px;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: #2B2E41;
+  margin: 0;
+  background: $yellow;
+}
+
+.accordionText {
+  color: $darkblue;
+  padding: 10px;
+  margin: 0;
+	font-size: 13px;
+  line-height: 17px;
+}

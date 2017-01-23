@@ -1,0 +1,123 @@
+@import '../../variables';
+
+.dropdownContent li a {
+  text-decoration: none;
+  color: $white;
+}
+
+.dropdownRoot {
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 36px;
+}
+
+.dropdownText {
+  cursor: pointer;
+  position: absolute;
+  text-indent: 10px;
+  // line-height: 32px;
+  background-color: $darkpurple;
+  line-height: 38px;
+  // border: 1px solid $red;
+  // border-radius: 3px;
+  // box-shadow: 0 1px 0 rgba(255,255,255, .9) inset, 0 1px 3px rgba(0,0,0, .1);
+  width: 100%;
+  color: $teal;
+}
+
+.dropdownText:after {
+  position: absolute;
+  right: 6px;
+  top: 15px;
+  content: '';
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 5px 4px 0 4px;
+  border-color: $white transparent transparent transparent;
+}
+
+.dropdownRoot:hover .dropdownText:after {
+  border-color: $darkblue transparent transparent transparent;
+}
+
+.dropdownText,
+.dropdownContent a {
+  color: #fff;
+}
+
+.dropdownToggle {
+  font-size: 0;
+  z-index: 1;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  border: none;
+  padding: 0;
+  margin: 0 0 0 1px;
+  background: transparent;
+  text-indent: -10px;
+  height: 34px;
+  width: 100%;
+
+}
+
+.dropdownToggle:focus {
+  outline: 0;
+}
+
+.dropdownContent {
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+  list-style-type: none;
+  position: absolute;
+  top: 32px;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  visibility:hidden;
+  border-radius: 3px;
+  text-indent: 10px;
+  line-height: 32px;
+  background-color: $darkpurple;
+  border-radius: 0px;
+  width: 100%;
+  z-index: 4;
+}
+
+.dropdownContent a {
+  display: block;
+}
+
+.dropdownContent a:hover {
+  background: $yellow;
+  color: $darkblue;
+}
+
+.dropdownToggle:hover ~ .dropdownText,
+.dropdownToggle:focus ~ .dropdownText {
+  background-color: $yellow;
+  color: $darkblue;
+}
+
+.dropdownToggle:focus ~ .dropdownText {
+  z-index: 2;
+}
+
+.dropdownToggle:focus ~ .dropdown-text:after {
+/*   border-width: 0 4px 5px 4px;
+  border-color: transparent transparent #555 transparent; */
+}
+
+.dropdownContent:hover,
+.dropdownToggle:focus ~ .dropdownContent {
+  opacity: 1;
+  visibility:visible;
+  top: 42px;
+}

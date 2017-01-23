@@ -1,0 +1,84 @@
+@import '../variables';
+
+.terminalInput {
+  width: 100%;
+  margin-left: 0;
+  padding: 0;
+  border: none;
+  height: 50px;
+  margin: -20px auto 20px auto;
+  background: transparent;
+  border-bottom: 4px solid $yellow;
+  text-indent: 54px;
+  color: $white;
+  font-size: 22px;
+  margin-top: 20px;
+}
+
+input.terminalInput::-webkit-input-placeholder {
+  color: rgba($white, 0.7);
+}
+
+input.terminalInput::-moz-placeholder {
+  color: rgba($white, 0.7);
+}
+
+input.terminalInput:-ms-input-placeholder {
+  color: rgba($white, 0.7);
+}
+
+input.terminalInput:-moz-placeholder {
+  color: rgba($white, 0.7);
+}
+
+.terminalWrap {
+  color: $white;
+  // background: $darkblue;
+  background: rgba($darkblue, 0.8);
+  padding: 6px 30px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0px;
+  left: 0px;
+  z-index: 10;
+
+  a {
+    color: $white;
+  }
+
+  // span {
+  //   margin-top: -14px;
+  //   display: block;
+  // }
+
+  h3 {
+    margin: 20px 0 -16px 17px;
+  }
+
+  .micIcon {
+    float: right;
+    position: absolute;
+    margin-left: -62px;
+    border: 1px solid #27BEBA;
+    padding: 8px;
+    border-radius: 30px;
+    margin-top: 16px;
+
+    &:hover {
+      background: $teal;
+    }
+  }
+  .arrowIcon {
+    float: left;
+    position: absolute;
+    margin-right: -48px;
+    /* border: 1px solid #27BEBA; */
+    padding: 6px;
+    border-radius: 30px;
+    margin-top: 22px;
+    font-size: 34px;
+    color: $teal;
+  }
+}

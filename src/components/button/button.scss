@@ -1,0 +1,19 @@
+@import '../../variables';
+
+.buttonRoot {
+  margin-top: 20px;
+}
+
+.button {
+  display: block;
+  color: $white;
+  background: $teal;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  &:hover {
+    background: $blue;
+  }
+}

@@ -1,0 +1,45 @@
+@import '../../variables';
+
+.checkboxAllWrap {
+  margin-top: 20px;
+}
+
+.checkboxWrap {
+  margin: 10px 0 10px 0;
+
+  input[type="checkbox"] {
+      display:none;
+  }
+  input[type="checkbox"] + label {
+      color: $white;
+      font-size:14px;
+    cursor: pointer;
+  }
+  input[type="checkbox"] + label span {
+      display:inline-block;
+      width:26px;
+      height:26px;
+      margin:-1px 4px 0 0;
+      vertical-align:middle;
+      cursor:pointer;
+      -moz-border-radius:  0px;
+      border-radius:  0px;
+      margin-right: 20px;
+  }
+
+  input[type="checkbox"] + label span {
+       background-color: $darkpurple;
+  }
+
+  input[type="checkbox"]:checked + label span{
+       background-color: $teal;
+  }
+
+  input[type="checkbox"] + label span,
+  input[type="checkbox"]:checked + label span {
+    // -webkit-transition:background-color 0.4s linear;
+    // -o-transition:background-color 0.4s linear;
+    // -moz-transition:background-color 0.4s linear;
+    // transition:background-color 0.4s linear;
+  }
+}

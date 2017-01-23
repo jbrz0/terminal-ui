@@ -1,0 +1,14 @@
+@import '../variables';
+@import '../grid/grid';
+@import '../index.scss';
+@import '../grid/gridBg'; // Override grid background
+
+.gridOneFourth {
+  // Edit mode - grid visibility
+  // background: rgba(255,255,255,0.3) !important;
+}
+
+.componentWrap {
+  padding-top: 250px;
+  padding-bottom: 70px;
+}

@@ -1,0 +1,39 @@
+@import '../../variables';
+
+.inputLineRoot {
+  margin-top: 20px;
+}
+
+.inputLineBox {
+  background: transparent;
+  color: $white;
+  padding: 10px;
+  width: 100%;
+  display: block;
+  border: none;
+  font-size: 16px;
+  border-bottom: 2px solid $yellow;
+  text-indent: 20px;
+}
+
+.inputLineIcon {
+  position: absolute;
+  margin-top: 6px;
+  color: $teal;
+}
+
+input.inputLineBox::-webkit-input-placeholder {
+  color: rgba($white, 0.8);
+}
+
+input.inputLineBox::-moz-placeholder {
+  color: rgba($white, 0.8);
+}
+
+input.inputLineBox:-ms-input-placeholder {
+  color: rgba($white, 0.8);
+}
+
+input.inputLineBox:-moz-placeholder {
+  color: rgba($white, 0.8);
+}
