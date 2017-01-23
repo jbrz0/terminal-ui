@@ -14,43 +14,41 @@ import MediaPlayer from './components/mediaPlayer/mediaPlayer.jsx';
 import Button from './components/button/button.jsx';
 
 import terminalIcon from './img/terminal-icon.svg';
+import Illustrator from './img/tech/illustrator.svg';
+import Sketch from './img/tech/sketch.svg';
+import Sass from './img/tech/sass.svg';
+import ReactLogo from './img/tech/react.svg';
+import Html from './img/tech/html.svg';
+import Css from './img/tech/css.svg';
+import Javascript from './img/tech/javascript.svg';
 
 
 const {Fullpage, Slide, TopNav, SideNav} = require('fullpage-react');
 
 
 let fullPageOptions = {
-  // for mouse/wheel events
-  // represents the level of force required to generate a slide change on non-mobile, 100 is default
   threshold: 100,
-
-  // for touchStart/touchEnd/mobile scrolling
-  // represents the level of force required to generate a slide change on mobile, 100 is default
   sensitivity: 100
 };
 
 let topNavOptions = {
-  footer: false, //topNav can double as a footer if true
-  align: 'left', //also supports center and right alignment
+  footer: false,
+  align: 'left',
 
-  //styles to apply to children
   activeStyles: {backgroundColor: 'white'},
   hoverStyles: {backgroundColor: 'yellow'},
   nonActiveStyles: {backgroundColor: 'gray'}
 };
 
-// all children are spans by default, for stacked buttons,
-// just wrap your nested components/buttons in divs
 let sideNavOptions = {
-  right: '2%', //left alignment is default
-  top: '50%', //top is 50% by default
+  right: '15px',
+  top: '50%',
 
   //styles to apply to children
-  activeStyles: {color: 'white'},
-  hoverStyles: {color: 'yellow'},
-  nonActiveStyles: {color: 'gray'}
+  // activeStyles: {color: 'white'},
+  // hoverStyles: {color: 'yellow'},
+  // nonActiveStyles: {color: 'gray'}
 };
-
 
 
 class Slideshow extends React.Component {
@@ -92,12 +90,6 @@ class Slideshow extends React.Component {
     return (
       <Fullpage active={this.updateActiveState}>
 
-        <TopNav {...topNavOptions}>
-          {navArr.map((n, idx) => {
-            return <span key={idx} ref={idx}>Slide {idx}</span>
-          }, this)}
-        </TopNav>
-
         <Nav />
         <Terminal page="grids" />
 
@@ -105,22 +97,33 @@ class Slideshow extends React.Component {
 
           <div id="title" className={s.slideshowRoot}>
             <div className={cx(s.slideshowWrapTop, s.gridWrapTop)}>
-              <div className={cx(s.headerBg, s.slideshowHeaderBg)}>
+              <div className={cx(s.gridHeaderBg, s.slideshowHeaderBg)}>
                 <img src={terminalIcon} />
               </div>
               <div className={cx(s.gridHeader, s.slideshowGridHeader)}>
                 <h1>Terminal UI Kit</h1>
-                <p>Welcome to the Terminal Kit</p>
+                <p>
+                  A collection of components, and styling to use in web projects. Includes a <a href="grid">grid</a> system to integrate components into. Also a collection of <a href="components">components</a> to add. Scroll down to view the downloads, or check it out on <a href="https://github.com/brz0/terminal-ui">github</a>.
+                </p>
+
+                <TopNav {...topNavOptions}>
+                  {navArr.map((n, idx) => {
+                  return <span key={idx} ref={1} className={s.DownloadLink}>Downloads</span>
+                  }, this)}
+                </TopNav>
+
+
               </div>
             </div>
           </div>
 
           {/* <div id="title">
-            Slide 1 redo
+            Slide 1
           </div> */}
 
         </Slide>
-        <Slide style={{position: 'relative'}}>
+
+        {/* <Slide style={{position: 'relative'}}>
 
           <a name="part2"></a>
 
@@ -139,38 +142,69 @@ class Slideshow extends React.Component {
             </div>
           </div>
 
-        </Slide>
+        </Slide> */}
+
+        {/* <Slide style={{position: 'relative'}}>
+          <a name="part3"></a>
+          <div className={cx(s.gridWrap, s.slideshowGridWrap)}>
+            <div className={cx(s.gridOneHalf, s.blueBg)}>
+              <h1>Interactivity with Youtube API</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque ante a turpis vulputate euismod. Nunc lacinia leo vitae mauris vestibulum, id dapibus risus suscipit. Nulla euismod tortor at leo congue, eu rhoncus tortor tempus.</p>
+            </div>
+            <div className={s.gridOneHalf}>
+              <MediaPlayer />
+            </div>
+          </div>
+        </Slide> */}
+
         <Slide style={{position: 'relative'}}>
 
           <a name="part3"></a>
 
           <div className={cx(s.gridWrap, s.slideshowGridWrap)}>
             <div className={cx(s.gridOneHalf, s.blueBg)}>
-              <h1>Interactivity with Youtube API</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-            <div className={s.gridOneHalf}>
-              <MediaPlayer />
-            </div>
-          </div>
-
-        </Slide>
-
-        <Slide style={{position: 'relative'}}>
-
-          <a name="part4"></a>
-
-          <div className={cx(s.gridWrap, s.slideshowGridWrap)}>
-            <div className={cx(s.gridOneHalf, s.blueBg)}>
               <h1>Select Package</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p>Download the kit files. Design files include .sketch and .ai files with colors and mockups of all components. Developer kit includes react components to easily be copied into layouts, within the <a href="grid">grid</a>. Production files that can be used with HTML layouts coming soon. Updates and code can also be found on github <a href="https://github.com/brz0/terminal-ui">here</a>.</p>
             </div>
             <div className={cx(s.gridOneHalf, s.slideshowDownload)}>
+
               <div className={s.downloadThird}>
                 <h4>Design Files</h4>
                 <p>Sketch & Adobe Illustrator files for design</p>
-                {/* <img src={Illustrator} /> <img src={Sketch} /> */}
+                <img src={Illustrator} /> <img src={Sketch} /><br />
               </div>
+              <div className={s.downloadThird}>
+                <h4>Developer</h4>
+                <p>React components and SASS styling files</p>
+                <img src={Sass} className={s.sassIcon} /> <img src={ReactLogo} /><br />
+              </div>
+              <div className={cx(s.downloadThird)}>
+                <h4>Production</h4>
+                <p>Minifed and ready to use static elements</p>
+                <img src={Html} className={s.htmlIcon} /> <img src={Css} className={s.cssIcon} /> <img src={Javascript} className={s.jsIcon} /><br />
+              </div>
+
+              <div className={s.downloadThird}>
+                <Button buttonText="download" buttonLink="#" />
+              </div>
+              <div className={s.downloadThird}>
+                <Button buttonText="download" buttonLink="#" />
+              </div>
+              <div className={s.downloadThird}>
+                <div className={s.disableBtnWrap}>
+                  <Button buttonText="soon" buttonLink="" />
+                </div>
+              </div>
+
+              <div className={s.downloadSm}>
+                <h4>Downloads</h4>
+                <a href="#"><p>Design Files (sketch/illustrator)</p></a>
+                <a href="#"><p>Developer Files (Node/ReactJS/Sass)</p></a>
+              </div>
+
+
+
+
             </div>
           </div>
 

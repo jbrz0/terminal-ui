@@ -14,25 +14,20 @@ function terminal() {
 
     let iT = this.refs.terminal.value;
 
-    if (iT === 'welcome' || iT === 'Welcome' || iT === 'WELCOME') {
+    if (iT === 'welcome' || iT === 'Welcome' || iT === 'WELCOME'
+    || iT === 'home' || iT === 'Home' || iT === 'HOME'|| iT === '0') {
       // window.location.href = "/components";
       // this.context.router.transitionTo('/path-to-link');
-      this.context.router.push('/components');
-      alert('welcome');
-    } else if (iT === 'dashboard' || iT === 'Dashboard' || iT === 'DASHBOARD') {
-      alert('dashboard');
-    } else if (iT === 'media' || iT === 'Media' || iT === 'MEDIA') {
-      alert('media');
-    } else if (iT === 'news' || iT === 'News' || iT === 'NEWS') {
-      alert('news');
-    } else if (iT === 'form' || iT === 'Form' || iT === 'FORM') {
-      alert('form');
+      this.context.router.push('/');
     } else if (iT === 'grids' || iT === 'Grids' || iT === 'GRIDS'
-      || iT === 'grid' || iT === 'Grid' || iT === 'GRID') {
-      alert('grids');
+      || iT === 'grid' || iT === 'Grid' || iT === 'GRID'|| iT === '1') {
+      this.context.router.push('/grid');
+    } else if (iT === 'component' || iT === 'Component' || iT === 'COMPONENT'
+      || iT === 'components' || iT === 'Components' || iT === 'COMPONENTS'|| iT === '2') {
+      this.context.router.push('/components');
     } else if (iT === 'download' || iT === 'Download' || iT === 'DOWNLOAD'
-      || iT === 'downloads' || iT === 'Downloads' || iT === 'DOWNLOADS') {
-      alert('downloads');
+      || iT === 'downloads' || iT === 'Downloads' || iT === 'DOWNLOADS'|| iT === '0') {
+      this.context.router.push('/');
     } else {
        window.alert("Try a page name!");
     }
@@ -66,7 +61,7 @@ export default class Terminal extends React.Component {
   render() {
     return(
       <div className={s.terminalWrap}>
-        <h3>Grids</h3>
+        {/* <h3>Grids</h3> */}
         <i className={cx(materialIcons, s.arrowIcon)}>keyboard_arrow_right</i>
         <form onSubmit={terminal.bind(this)} className={s.terminalForm}>
           <input className={s.terminalInput} ref='terminal' value={this.state.inputValue} onChange={this.updateInputValue.bind(this)} placeholder={"type " + this.props.page + " and press ↩ to see the next page"} />

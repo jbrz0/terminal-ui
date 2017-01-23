@@ -41,7 +41,7 @@ export default class Components extends React.Component {
     return (
       <div className={s.componentWrap}>
         <Nav />
-        <Terminal page="home" />
+        <Terminal page="downloads" />
 
         <div className={cx(s.gridWrap, s.gridWrapComponents)}>
           <div className={s.gridOneFourth}>
@@ -80,7 +80,6 @@ export default class Components extends React.Component {
 
             <InputBanner />
             <CardAvatar />
-            <Input />
 
 
           </div>

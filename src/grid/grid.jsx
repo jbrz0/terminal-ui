@@ -1,5 +1,6 @@
 import React from 'react';
 import s from './grid.scss';
+import cx from 'classnames';
 import Nav from '../nav/nav.jsx';
 import Terminal from '../terminal/terminal.jsx';
 import gridIcon from '../img/grid-icon.svg';
@@ -11,7 +12,7 @@ export default class Grid extends React.Component {
 
         <Nav />
         <div className={s.gridWrapTop}>
-          <div className={s.headerBg}>
+          <div className={s.gridHeaderBg}>
             <img src={gridIcon} />
           </div>
           <div className={s.gridHeader}>
@@ -21,30 +22,30 @@ export default class Grid extends React.Component {
         </div>
 
         <div className={s.gridWrap}>
-          <div className={s.gridOneThird}></div>
-          <div className={s.gridOneThird}></div>
-          <div className={s.gridOneThird}></div>
+          <div className={s.gridOneThird} style={{height: '200px'}}></div>
+          <div className={s.gridOneThird} style={{height: '200px'}}></div>
+          <div className={s.gridOneThird} style={{height: '200px'}}></div>
         </div>
 
         <div className={s.gridWrap}>
-          <div className={s.gridOneHalf}></div>
-          <div className={s.gridOneHalf}></div>
+          <div className={s.gridOneHalf} style={{height: '200px'}}></div>
+          <div className={s.gridOneHalf} style={{height: '200px'}}></div>
         </div>
 
         <div className={s.gridWrap}>
-          <div className={s.gridOneFourth}></div>
-          <div className={s.gridOneFourthWide}></div>
-          <div className={s.gridOneFourth}></div>
+          <div className={cx(s.gridOneFourth, s.gridOneFourthNarrow)} style={{height: '200px'}}></div>
+          <div className={cx(s.gridOneFourth, s.gridOneFourthWide)} style={{height: '200px'}}></div>
+          <div className={cx(s.gridOneFourth, s.gridOneFourthNarrow)} style={{height: '200px'}}></div>
         </div>
 
         <div className={s.gridWrap}>
-          <div className={s.gridOneFourthBottom}></div>
-          <div className={s.gridOneFourthBottom}></div>
-          <div className={s.gridOneFourthBottom}></div>
-          <div className={s.gridOneFourthBottom}></div>
+          <div className={s.gridOneFourthBottom} style={{height: '200px'}}></div>
+          <div className={s.gridOneFourthBottom} style={{height: '200px'}}></div>
+          <div className={s.gridOneFourthBottom} style={{height: '200px'}}></div>
+          <div className={s.gridOneFourthBottom} style={{height: '200px'}}></div>
         </div>
 
-        <Terminal />
+        <Terminal page="components" />
 
       </div>
     )

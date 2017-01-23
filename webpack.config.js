@@ -74,7 +74,8 @@ module.exports = {
 		new webpack.HotModuleReplacementPlugin(),
 		new DashboardPlugin(),
 		new HtmlWebpackPlugin({
-			template: './src/template.html'
+			template: './src/template.html',
+			favicon: './favicon.ico',
 		}),
 		new webpack.DefinePlugin({
 			"process.env": {

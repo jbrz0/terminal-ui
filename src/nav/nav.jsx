@@ -24,20 +24,20 @@ export default class Nav extends React.Component {
     return (
       <div>
         <div className={s.navWrap}>
-          <img src={Logo} className={s.logoNav}/>
+          <a href="/"><img src={Logo} className={s.logoNav}/></a>
           <a className={s.menuLink} onClick={this.click.bind(this)}>
             <img src={Menu} className={s.logoMenu}/>
           </a>
         </div>
         <div className={cx(s.navMenuOpen, classes)}>
           <ul className={s.navList}>
-            <a href="components"><li><span>(0)</span> Welcome</li></a>
-            <a href="#"><li><span>(1)</span> Dashboard</li></a>
-            <a href="#"><li><span>(2)</span> Media</li></a>
-            <a href="#"><li><span>(3)</span> News</li></a>
+            <a href="/"><li><span>(0)</span> Welcome</li></a>
+            <a href="grid"><li><span>(1)</span> Grid</li></a>
+            <a href="components"><li><span>(2)</span> Components</li></a>
+            {/* <a href="#"><li><span>(3)</span> News</li></a>
             <a href="#"><li><span>(4)</span> Form</li></a>
             <a href="#"><li><span>(5)</span> Grids</li></a>
-            <a href="#"><li><span>(6)</span> Download</li></a>
+            <a href="#"><li><span>(6)</span> Download</li></a> */}
           </ul>
         </div>
       </div>
