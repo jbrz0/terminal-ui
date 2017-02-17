@@ -185,10 +185,10 @@ class Slideshow extends React.Component {
               </div>
 
               <div className={s.downloadThird}>
-                <Button buttonText="download" buttonLink="#" />
+                <Button buttonText="download" buttonLink="http://bit.ly/2kvIFC0" />
               </div>
               <div className={s.downloadThird}>
-                <Button buttonText="download" buttonLink="#" />
+                <Button buttonText="download" buttonLink="https://github.com/brz0/terminal-ui" />
               </div>
               <div className={s.downloadThird}>
                 <div className={s.disableBtnWrap}>

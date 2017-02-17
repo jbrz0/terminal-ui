@@ -1,4 +1,3 @@
-import styles from './index.scss';
 import React from 'react';
 // import Slideshow from './slideshow.jsx';
 
