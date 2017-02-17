@@ -5,9 +5,9 @@ import styles from './index.scss';
 //
 // import { Router, Route, Link, browserHistory } from 'react-router';
 
-let injectTapEventPlugin = require('react-tap-event-plugin');
-window.React = React;
-injectTapEventPlugin();
+// let injectTapEventPlugin = require('react-tap-event-plugin');
+// window.React = React;
+// injectTapEventPlugin();
 
 import App from './app.jsx'
 // import Slideshow from './slideshow.jsx';
