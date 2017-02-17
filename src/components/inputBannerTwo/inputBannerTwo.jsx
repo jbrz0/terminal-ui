@@ -13,7 +13,7 @@ export default class InputBannerTwo extends React.Component {
           <img src={Cover} className={s.inputBannerTwoImg} />
           Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur
         </div>
-        <Input />
+        <div className={s.inputBannerTwoTextWrap}><Input /></div>
         <a href="#" className={s.inputBannerSubmit}>OK</a>
       </div>
     )
