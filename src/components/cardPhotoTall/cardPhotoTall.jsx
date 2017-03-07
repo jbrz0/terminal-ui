@@ -1,11 +1,9 @@
 import React from 'react';
 import cx from 'classnames';
-import s from './cardPhotoTall.scss';
 
+import s from './cardPhotoTall.scss';
 import PhotoPath from '../../img/card-tall-large.jpg';
 const Photo = {backgroundImage: 'url(' + PhotoPath + ')'}
-
-
 
 export default class CardPhotoTall extends React.Component {
   render() {

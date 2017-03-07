@@ -1,18 +1,16 @@
 import React from 'react';
 import cx from 'classnames';
+const materialIcons = "material-icons";
+
 import s from './mediaPlayer.scss';
 import Slider from '../slider/slider.jsx';
-
 import Cover from '../../img/cover-art.png'
-
-const materialIcons = "material-icons";
 
 export default class MediaPlayer extends React.Component {
   render() {
     function preventScroll() {
       document.body.style.overflow='hidden';
     }
-
     function enableScroll() {
       document.body.style.overflow='auto';
     }
@@ -29,7 +27,6 @@ export default class MediaPlayer extends React.Component {
         <div className={s.mediaPlayerSlider}>
           <Slider />
         </div>
-
         <ul className={s.mediaPlayerList} onMouseOver={preventScroll.bind(this)} onMouseOut={enableScroll.bind(this)}>
           <a href="#"><li>List Item</li></a>
           <a href="#"><li>List Item</li></a>
@@ -40,8 +37,6 @@ export default class MediaPlayer extends React.Component {
           <a href="#"><li>List Item</li></a>
           <a href="#"><li>List Item</li></a>
         </ul>
-        {/* <i className={materialIcons}>volume_up</i> */}
-
       </div>
     )
   }

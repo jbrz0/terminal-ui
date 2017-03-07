@@ -18,12 +18,8 @@
   cursor: pointer;
   position: absolute;
   text-indent: 10px;
-  // line-height: 32px;
   background-color: $darkpurple;
   line-height: 38px;
-  // border: 1px solid $red;
-  // border-radius: 3px;
-  // box-shadow: 0 1px 0 rgba(255,255,255, .9) inset, 0 1px 3px rgba(0,0,0, .1);
   width: 100%;
   color: $teal;
 }
@@ -62,7 +58,6 @@
   text-indent: -10px;
   height: 34px;
   width: 100%;
-
 }
 
 .dropdownToggle:focus {
@@ -108,11 +103,6 @@
 
 .dropdownToggle:focus ~ .dropdownText {
   z-index: 2;
-}
-
-.dropdownToggle:focus ~ .dropdown-text:after {
-/*   border-width: 0 4px 5px 4px;
-  border-color: transparent transparent #555 transparent; */
 }
 
 .dropdownContent:hover,

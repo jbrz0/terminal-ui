@@ -1,5 +1,3 @@
-// import s from './index.scss';
-// import Nav from './nav/nav.jsx';
 import React from 'react';
 import Terminal from './terminal/terminal.jsx';
 import Nav from './nav/nav.jsx';
@@ -12,7 +10,6 @@ import Rows from './components/rows/rows.jsx';
 import Dropdown from './components/dropdown/dropdown.jsx';
 import MediaPlayer from './components/mediaPlayer/mediaPlayer.jsx';
 import Button from './components/button/button.jsx';
-
 import terminalIcon from './img/terminal-icon.svg';
 import Illustrator from './img/tech/illustrator.svg';
 import Sketch from './img/tech/sketch.svg';
@@ -22,9 +19,7 @@ import Html from './img/tech/html.svg';
 import Css from './img/tech/css.svg';
 import Javascript from './img/tech/javascript.svg';
 
-
 const {Fullpage, Slide, TopNav, SideNav} = require('fullpage-react');
-
 
 let fullPageOptions = {
   threshold: 100,
@@ -34,7 +29,6 @@ let fullPageOptions = {
 let topNavOptions = {
   footer: false,
   align: 'left',
-
   activeStyles: {backgroundColor: 'white'},
   hoverStyles: {backgroundColor: 'yellow'},
   nonActiveStyles: {backgroundColor: 'gray'}
@@ -43,11 +37,6 @@ let topNavOptions = {
 let sideNavOptions = {
   right: '15px',
   top: '50%',
-
-  //styles to apply to children
-  // activeStyles: {color: 'white'},
-  // hoverStyles: {color: 'yellow'},
-  // nonActiveStyles: {color: 'gray'}
 };
 
 
@@ -58,29 +47,23 @@ class Slideshow extends React.Component {
 
     this.updateActiveState = this.updateActiveState.bind(this);
   }
-
   updateActiveState(newActive) {
     this.setState({'active': newActive});
   }
-
   shouldComponentUpdate(nP, nS) {
-    //ensure hoverStyles and activeStyles update
     return nS.active != this.state.active;
   }
-
   onMouseOver(idx) {
     this.setState({'hover': idx});
   }
-
   onMouseOut(e) {
     this.setState({'hover': null});
   }
-
   compareStyles(component, idx) {
     return idx == this.state.active ? component.activeStyles : idx == this.state.hover ? component.hoverStyles : component.nonActiveStyles
   }
-
   render() {
+
     let navCount = 3;
     let navArr = [];
     for (let i = 0; i < navCount; i++) {
@@ -89,12 +72,9 @@ class Slideshow extends React.Component {
 
     return (
       <Fullpage active={this.updateActiveState}>
-
         <Nav />
         <Terminal page="grids" />
-
         <Slide style={{position: 'relative'}}>
-
           <div id="title" className={s.slideshowRoot}>
             <div className={cx(s.slideshowWrapTop, s.gridWrapTop)}>
               <div className={cx(s.gridHeaderBg, s.slideshowHeaderBg)}>
@@ -112,62 +92,19 @@ class Slideshow extends React.Component {
                   }, this)}
                 </TopNav>
 
-
               </div>
             </div>
           </div>
 
-          {/* <div id="title">
-            Slide 1
-          </div> */}
-
         </Slide>
-
-        {/* <Slide style={{position: 'relative'}}>
-
-          <a name="part2"></a>
-
-          <div className={cx(s.gridWrap, s.slideshowGridWrap)}>
-            <div className={s.gridOneThird}>
-              <Calendar />
-              <Dropdown />
-              <Button buttonText="See More" buttonLink="components" />
-
-            </div>
-            <div className={s.gridOneThird}>
-              <Weather />
-            </div>
-            <div className={s.gridOneThird}>
-              <Rows />
-            </div>
-          </div>
-
-        </Slide> */}
-
-        {/* <Slide style={{position: 'relative'}}>
-          <a name="part3"></a>
-          <div className={cx(s.gridWrap, s.slideshowGridWrap)}>
-            <div className={cx(s.gridOneHalf, s.blueBg)}>
-              <h1>Interactivity with Youtube API</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque ante a turpis vulputate euismod. Nunc lacinia leo vitae mauris vestibulum, id dapibus risus suscipit. Nulla euismod tortor at leo congue, eu rhoncus tortor tempus.</p>
-            </div>
-            <div className={s.gridOneHalf}>
-              <MediaPlayer />
-            </div>
-          </div>
-        </Slide> */}
-
         <Slide style={{position: 'relative'}}>
-
           <a name="part3"></a>
-
           <div className={cx(s.gridWrap, s.slideshowGridWrap)}>
             <div className={cx(s.gridOneHalf, s.blueBg)}>
               <h1>Select Package</h1>
               <p>Download the kit files. Design files include .sketch and .ai files with colors and mockups of all components. Developer kit includes react components to easily be copied into layouts, within the <a href="grid">grid</a>. Production files that can be used with HTML layouts coming soon. Updates and code can also be found on github <a href="https://github.com/brz0/terminal-ui">here</a>.</p>
             </div>
             <div className={cx(s.gridOneHalf, s.slideshowDownload)}>
-
               <div className={s.downloadThird}>
                 <h4>Design Files</h4>
                 <p>Sketch & Adobe Illustrator files for design</p>
@@ -183,7 +120,6 @@ class Slideshow extends React.Component {
                 <p>Minifed and ready to use static elements</p>
                 <img src={Html} className={s.htmlIcon} /> <img src={Css} className={s.cssIcon} /> <img src={Javascript} className={s.jsIcon} /><br />
               </div>
-
               <div className={s.downloadThird}>
                 <Button buttonText="download" buttonLink="http://bit.ly/2kvIFC0" />
               </div>
@@ -195,19 +131,13 @@ class Slideshow extends React.Component {
                   <Button buttonText="soon" buttonLink="" />
                 </div>
               </div>
-
               <div className={s.downloadSm}>
                 <h4>Downloads</h4>
                 <a href="#"><p>Design Files (sketch/illustrator)</p></a>
                 <a href="#"><p>Developer Files (Node/ReactJS/Sass)</p></a>
               </div>
-
-
-
-
             </div>
           </div>
-
         </Slide>
 
         <SideNav {...sideNavOptions}>
@@ -215,7 +145,6 @@ class Slideshow extends React.Component {
             return <div key={idx} ref={idx}>&#x25CF;</div>
           }, this)}
         </SideNav>
-
       </Fullpage>
     );
   }

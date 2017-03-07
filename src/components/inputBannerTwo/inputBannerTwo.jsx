@@ -1,8 +1,8 @@
 import React from 'react';
 import cx from 'classnames';
+
 import s from './inputBannerTwo.scss';
 import Input from '../input/input.jsx';
-
 import Cover from '../../img/cover-art.png';
 
 export default class InputBannerTwo extends React.Component {

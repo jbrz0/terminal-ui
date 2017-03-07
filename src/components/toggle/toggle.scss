@@ -16,7 +16,6 @@
 	border-radius: 100px;
 	position: relative;
 	margin-top: 2px;
-  // margin: auto;
 }
 
 .toggleLabel:after {
@@ -26,7 +25,7 @@
 	left: 5px;
 	width: 40px;
 	height: 40px;
-	background: $beige;
+	background: $lightpurple;
 	border-radius: 90px;
 }
 
@@ -46,6 +45,5 @@
 .toggleInputDisabled,
 .toggleLabelDisabled{
 	opacity: 0.6 !important;
-  // background: saturate( $darkpurple, 40% );
   cursor: not-allowed;
 }

@@ -1,8 +1,8 @@
 import React from 'react';
 import cx from 'classnames';
-import s from './inputLine.scss';
-
 const materialIcons = "material-icons";
+
+import s from './inputLine.scss';
 
 export default class InputLine extends React.Component {
   render() {

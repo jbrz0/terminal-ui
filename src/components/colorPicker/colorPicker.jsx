@@ -1,10 +1,7 @@
 import React from 'react';
 import cx from 'classnames';
-import s from './colorPicker.scss';
 import { ChromePicker } from 'react-color';
 import reactCSS from 'reactcss';
-
-
 
 export default class ColorPicker extends React.Component {
   render() {
@@ -19,7 +16,7 @@ export default class ColorPicker extends React.Component {
     })
 
     return(
-      <div className={s.colorPickerRoot}>
+      <div>
         <ChromePicker disableAlpha="true" />
       </div>
     )

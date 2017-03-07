@@ -1,12 +1,9 @@
 @import '../../variables';
 
 .accordion {
-	background: $beige;
+	background: $lightpurple;
 	border-bottom-width: 0;
   margin-top: 20px;
-}
-.accordionSection {
-	// border-bottom: solid 1px #000;
 }
 
 .accordionSection > h3 {
@@ -19,6 +16,7 @@
   color: $white;
   cursor: pointer;
 }
+
 .accordionSection > .body {
     height: 0;
     padding: 0 10px;
@@ -26,15 +24,12 @@
     transition: height .5s;
     transition: height .5s, padding-top .5s, padding-bottom .5s;
 }
+
 .accordionSection.selected > .body {
   height: 100px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
-
-// .selected h3 {
-//   color: $darkblue !important;
-// }
 
 .sectionSelectTitle {
   padding: 6px 6px 6px 10px;

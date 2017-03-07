@@ -1,5 +1,4 @@
 import React from 'react';
-// import Slideshow from './slideshow.jsx';
 
 export default class Layout extends React.Component {
   render() {

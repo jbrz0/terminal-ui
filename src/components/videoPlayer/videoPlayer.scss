@@ -7,6 +7,7 @@
 	height: 0;
   margin-top: 20px;
 }
+
 .videoWrapper .videoIframe {
 	position: absolute;
 	top: 0;
@@ -22,13 +23,10 @@
   position: absolute;
 	padding: 10px 4px;
 	text-align: center;
-
 	padding: 18px 0 18px 0;
   bottom: -62px;
-
 	border-right: 1px solid $darkpurple;
   box-sizing: content-box;
-
 	&:hover {
 		background: $yellow;
 		cursor: pointer;
@@ -39,18 +37,13 @@
   background: $darkpurple;
   lost-column: 3/4 0 0px no-flex;
   position: absolute;
-  // bottom: -16px;
   right: 0;
-	// padding: 10px 4px;
 	text-align: center;
-
 	padding-bottom: 20px;
   padding-left: 10px;
   padding-right: 10px;
   bottom: -62px;
 }
-
-// mediaPlayBtn
 
 .volBtn {
 	background: $darkpurple;
@@ -73,7 +66,6 @@
   bottom: -125px;
   padding: 18px 0;
 	right: 0;
-
 	border-left: 2px solid $darkpurple;
   box-sizing: content-box;
 	cursor: pointer;

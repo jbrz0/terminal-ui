@@ -6,40 +6,29 @@
 
 .radioWrap {
   margin: 10px 0 10px 0;
-
   input[type="radio"] {
-      display:none;
+    display:none;
   }
   input[type="radio"] + label {
-      color: $white;
-      font-size:14px;
+    color: $white;
+    font-size:14px;
     cursor: pointer;
   }
   input[type="radio"] + label span {
-      display:inline-block;
-      width:26px;
-      height:26px;
-      margin:-1px 4px 0 0;
-      vertical-align:middle;
-      cursor:pointer;
-      -moz-border-radius:  50%;
-      border-radius:  50%;
-      margin-right: 20px;
+    display:inline-block;
+    width:26px;
+    height:26px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    cursor:pointer;
+    -moz-border-radius:  50%;
+    border-radius:  50%;
+    margin-right: 20px;
   }
-
   input[type="radio"] + label span {
-       background-color: $darkpurple;
+    background-color: $darkpurple;
   }
-
   input[type="radio"]:checked + label span{
-       background-color: $teal;
-  }
-
-  input[type="radio"] + label span,
-  input[type="radio"]:checked + label span {
-    // -webkit-transition:background-color 0.4s linear;
-    // -o-transition:background-color 0.4s linear;
-    // -moz-transition:background-color 0.4s linear;
-    // transition:background-color 0.4s linear;
+    background-color: $teal;
   }
 }

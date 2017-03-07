@@ -11,32 +11,11 @@ export default class App extends React.Component {
   render() {
     return(
       <Router history={browserHistory}>
-
-        {/* <Route path="/" getComponent={(nextState, cb) => {
-          require.ensure([], (require) => {
-            cb(null, require('./slideshow.jsx').default);
-          })
-        }} />
-        <Route path="grid" getComponent={(nextState, cb) => {
-          require.ensure([], (require) => {
-            cb(null, require('./grid/grid.jsx').default);
-          })
-        }} />
-        <Route path="components" getComponent={(nextState, cb) => {
-          require.ensure([], (require) => {
-            cb(null, require('./components/components.jsx').default);
-          })
-        }} />
-        <Route path="*" getComponent={(nextState, cb) => {
-          require.ensure([], (require) => {
-            cb(null, require('./nomatch.jsx').default);
-          })
-        }} /> */}
-
-          <Route path="/" component={Slideshow} />
-          <Route path="grid" component={Grid} />
-          <Route path="components" component={Components} />
-          <Route path="*" component={NoMatch}/>
+        <Route path="/" component={Slideshow} />
+        <Route path="grid" component={Grid} />
+        <Route path="components" component={Components} />
+        {/* <Route path="*" component={NoMatch}/> */}
+        <Route path="*" component={Slideshow}/>
       </Router>
     );
   }

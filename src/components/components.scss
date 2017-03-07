@@ -1,17 +1,13 @@
 @import '../variables';
 @import '../grid/grid';
 @import '../index.scss';
-@import '../grid/gridBg'; // Override grid background
-
-.gridOneFourth {
-  // Edit mode - grid visibility
-  // background: rgba(255,255,255,0.3) !important;
-}
+@import '../grid/gridBg'; // Override grid BG
 
 .componentWrap {
   padding-top: 250px;
   padding-bottom: 70px;
 }
+
 @media (max-width: 730px) {
   .componentWrap {
     padding-top: 200px;

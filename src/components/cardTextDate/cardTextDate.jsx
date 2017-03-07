@@ -2,7 +2,6 @@ import React from 'react';
 import cx from 'classnames';
 import s from './cardTextDate.scss';
 
-
 export default class CardTextDate extends React.Component {
   render() {
     return(

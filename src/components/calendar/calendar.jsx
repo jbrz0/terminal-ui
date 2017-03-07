@@ -1,27 +1,12 @@
-
-var React = require('react');
-var DatePicker = require('./datepicker/datepicker.jsx');
-var moment = require('moment');
-
+import React from 'react';
 import find from 'lodash/find';
-
-// require('./react-datepicker.css');
-require('./datepicker/stylesheets/datepicker-cssmodules.scss');
-// CSS Modules, react-datepicker-cssmodules.css
-// require('react-datepicker/dist/react-datepicker-cssmodules.css');
 import cx from 'classnames';
-import s from './calendar.scss';
-
-  // if (date === null) {
-  // console.log("selected date: %s", date);
-  // }
-  // else {
-  // console.log("selected date: %s", date.format("DD/MM/YYYY"));
-  // }
-
-// .react-datepicker
-
+import moment from 'moment';
 const materialIcons = "material-icons";
+
+var DatePicker = require('./datepicker/datepicker.jsx');
+require('./datepicker/stylesheets/datepicker-cssmodules.scss');
+import s from './calendar.scss';
 
 export default class Calendar extends React.Component {
 

@@ -1,7 +1,6 @@
 import React from 'react';
 import s from './components.scss';
 import cx from 'classnames';
-// import g from '../grid/grid.scss';
 import Nav from '../nav/nav.jsx';
 
 // Individiaul components
@@ -36,13 +35,11 @@ import Terminal from '../terminal/terminal.jsx';
 
 export default class Components extends React.Component {
 
-
   render() {
     return (
       <div className={s.componentWrap}>
         <Nav />
         <Terminal page="downloads" />
-
         <div className={cx(s.gridWrap, s.gridWrapComponents)}>
           <div className={s.gridOneFourth}>
             <Alert />
@@ -51,7 +48,6 @@ export default class Components extends React.Component {
             <Time />
             <CardTextDate />
             <CardPhotoTall />
-
           </div>
           <div className={s.gridOneFourth}>
             <Calendar />
@@ -62,7 +58,6 @@ export default class Components extends React.Component {
             <MediaPlayer />
             <CardPhotoShort />
             <CardText />
-
           </div>
           <div className={s.gridOneFourth}>
             <Rows />
@@ -71,17 +66,13 @@ export default class Components extends React.Component {
             <RadioButtons />
             <Checkboxes />
             <Slider />
-
             <div className={s.linkWrap}>
               <a href="#" className={s.link}>Link</a>
               &nbsp;&nbsp;&nbsp;
               <a href="#" className={s.linkBox}>Link</a>
             </div>
-
             <InputBanner />
             <CardAvatar />
-
-
           </div>
           <div className={s.gridOneFourth}>
             <TabScroll />
@@ -91,7 +82,6 @@ export default class Components extends React.Component {
             <InputBannerTwo />
           </div>
         </div>
-
       </div>
     )
   }

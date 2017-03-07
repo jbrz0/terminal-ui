@@ -1,9 +1,7 @@
 @import './variables';
 
-// Globals
 h1, h2, h3 {
   font-family: 'Anton', sans-serif;
-  // letter-spacing: 2px;
 }
 *, h4, h5, h6, p {
   font-family: 'Jura', sans-serif;
@@ -25,13 +23,6 @@ body {
   margin: 0;
 }
 
-.redBg {
-    background-color: red;
-    border-radius: 5px;
-    color: white;
-    padding: 5px;
-}
-
 .linkWrap {
   margin-top: 30px;
 }
@@ -39,7 +30,6 @@ body {
 .link {
   color: $white;
   text-decoration: underline;
-
   &:hover {
     opacity: 0.8;
   }
@@ -50,7 +40,6 @@ body {
   background: $teal;
   color: $white;
   text-decoration: none;
-
   &:hover {
     background: $blue;
   }

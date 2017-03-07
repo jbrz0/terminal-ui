@@ -9,14 +9,14 @@
   .alertBtn {
     background: transparent;
     border: none;
-    border-bottom: 1px solid rgba($beige, 0.6);
+    border-bottom: 1px solid rgba($lightpurple, 0.6);
     padding: 5px 10px 5px 10px;
     color: $white;
     font-size: 0.85em;
     margin: auto 4px;
     text-decoration: none;
     &:hover {
-      background: rgba($beige, 0.4);
+      background: rgba($lightpurple, 0.4);
     }
   }
 }

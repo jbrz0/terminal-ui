@@ -15,6 +15,7 @@
   padding-top: 250px;
   padding-bottom: 100px;
 }
+
 @media (max-width: 730px) {
   .gridRoot {
     padding-top: 200px;
@@ -22,15 +23,8 @@
 }
 
 .gridWrapComponents {
-  // padding-bottom: 1100px !important;
-  // padding-bottom: 1150px !important;
   padding-bottom: 100px !important;
 }
-// @media (max-width: 900px) {
-//   .gridWrapComponents {
-//     padding-bottom: 100px !important;
-//   }
-// }
 
 .gridHeader {
   lost-column: 3/8 0 40px flex;
@@ -52,7 +46,6 @@
   max-width: 300px;
   float: left;
   display: block;
-
   img {
     width: 100%;
     max-width: 200px;
@@ -74,6 +67,7 @@
   background: $teal;
   margin: 20px auto;
 }
+
 @media (max-width: 900px) {
   .gridOneThird {
     lost-column: 1/3 0 20px flex;
@@ -86,12 +80,14 @@
   background: $yellow;
   margin: 20px auto;
 }
+
 @media (max-width: 900px) {
   .gridOneHalf {
     lost-column: 1/2 0 20px flex;
     margin: 20px auto 0 auto;
   }
 }
+
 @media (max-width: 730px) {
   .gridOneHalf {
       lost-column: 1/1 0 20px flex;
@@ -106,7 +102,6 @@
 }
 
 .gridOneFourthBottom {
-  /* Additional class just for the demo */
   lost-column: 1/4 0 40px flex;
   background: $pink;
   margin: 20px auto;
@@ -120,16 +115,13 @@
     margin: 20px auto 0 auto;
   }
 }
+
 @media (max-width: 500px) {
   .gridOneFourth,
   .gridOneFourthBottom {
     lost-column: 1/1 1 20px flex;
     height: auto;
   }
-}
-
-.gridOneFourthNarrow {
-  /* Target narrow grid for responsive behaviour below */
 }
 
 .gridOneFourthWide {

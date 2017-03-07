@@ -2,7 +2,6 @@ import React from 'react';
 import cx from 'classnames';
 import s from './toggle.scss';
 
-
 export default class Toggle extends React.Component {
   render() {
     return(

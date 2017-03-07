@@ -2,7 +2,6 @@ import React from 'react';
 import cx from 'classnames';
 import s from './cardText.scss';
 
-
 export default class CardText extends React.Component {
   render() {
     return(
