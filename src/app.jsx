@@ -3,7 +3,7 @@ import { Router, Route, Link, browserHistory } from 'react-router';
 
 import Grid from './grid/grid.jsx';
 import Components from './components/components.jsx';
-import NoMatch from './nomatch.jsx';
+import NoMatch from './noMatch/nomatch.jsx';
 import Layout from './layout.jsx';
 import Slideshow from './slideshow.jsx';
 
@@ -14,8 +14,7 @@ export default class App extends React.Component {
         <Route path="/" component={Slideshow} />
         <Route path="grid" component={Grid} />
         <Route path="components" component={Components} />
-        {/* <Route path="*" component={NoMatch}/> */}
-        <Route path="*" component={Slideshow}/>
+        <Route path="/*" component={NoMatch}/>
       </Router>
     );
   }

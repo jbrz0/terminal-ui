@@ -1,0 +1,139 @@
+@import '../variables';
+
+.gridWrapTop {
+  margin-bottom: 100px;
+  lost-center: 1200px 40px flex;
+  color: $white;
+}
+
+.gridWrap {
+  lost-center: 1200px 40px flex;
+  color: $white;
+}
+
+.gridRoot {
+  padding-top: 250px;
+  padding-bottom: 100px;
+}
+
+@media (max-width: 730px) {
+  .gridRoot {
+    padding-top: 200px;
+  }
+}
+
+.gridWrapComponents {
+  padding-bottom: 100px !important;
+}
+
+.gridHeader {
+  lost-column: 3/8 0 40px flex;
+  background: $blue;
+  padding: 30px 50px;
+  p {
+    line-height: 1.25em;
+  }
+  a {
+    color: $yellow;
+  }
+}
+
+.gridHeaderBg {
+  lost-column: 2/8 0 40px flex;
+  lost-offset: 1/8;
+  height: 100%;
+  width: 100%;
+  max-width: 300px;
+  float: left;
+  display: block;
+  img {
+    width: 100%;
+    max-width: 200px;
+    display: block;
+    margin: auto;
+  }
+};
+@media (max-width: 900px) {
+  .gridHeader, .gridHeaderBg {
+    lost-column: 1/1 0 20px flex;
+  }
+  .gridHeaderBg {
+    display: none;
+  }
+}
+
+.gridOneThird {
+  lost-column: 1/3 0 40px flex;
+  background: $teal;
+  margin: 20px auto;
+}
+
+@media (max-width: 900px) {
+  .gridOneThird {
+    lost-column: 1/3 0 20px flex;
+    margin: 20px auto 0 auto;
+  }
+}
+
+.gridOneHalf {
+  lost-column: 1/2 0 40px flex;
+  background: $yellow;
+  margin: 20px auto;
+}
+
+@media (max-width: 900px) {
+  .gridOneHalf {
+    lost-column: 1/2 0 20px flex;
+    margin: 20px auto 0 auto;
+  }
+}
+
+@media (max-width: 730px) {
+  .gridOneHalf {
+      lost-column: 1/1 0 20px flex;
+  }
+}
+
+.gridOneFourth {
+
+  lost-column: 1/4 0 40px flex;
+  background: $red;
+  margin: 20px auto;
+}
+
+.gridOneFourthBottom {
+  lost-column: 1/4 0 40px flex;
+  background: $pink;
+  margin: 20px auto;
+}
+
+@media (max-width: 900px) {
+  .gridOneFourth,
+  .gridOneFourthBottom {
+    lost-column: 1/2 2 20px flex;
+    height: auto;
+    margin: 20px auto 0 auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .gridOneFourth,
+  .gridOneFourthBottom {
+    lost-column: 1/1 1 20px flex;
+    height: auto;
+  }
+}
+
+.gridOneFourthWide {
+  lost-column: 2/4 0 40px flex;
+  background: $red;
+  margin: 20px auto;
+}
+
+@media (max-width: 730px) {
+  .gridOneFourthWide,
+  .gridOneFourthNarrow {
+    lost-column: 1/1 0 20px flex;
+    margin: 20px auto 0 auto;
+  }
+}
