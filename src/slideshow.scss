@@ -97,8 +97,8 @@
   }
 }
 
-.downloadThird {
-  lost-column: 1/3 3 10px no-flex;
+.downloadHalf {
+  lost-column: 1/2 2 10px no-flex;
   text-align: center;
   color: $white;
   p {
@@ -137,7 +137,7 @@
   }
 }
 @media (max-width: 730px) {
-  .downloadThird {
+  .downloadHalf {
     display: none;
   }
   .downloadSm {

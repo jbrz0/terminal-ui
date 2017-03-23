@@ -105,31 +105,21 @@ class Slideshow extends React.Component {
               <p>Download the kit files. Design files include .sketch and .ai files with colors and mockups of all components. Developer kit includes react components to easily be copied into layouts, within the <a href="grid">grid</a>. Production files that can be used with HTML layouts coming soon. Updates and code can also be found on github <a href="https://github.com/brz0/terminal-ui">here</a>.</p>
             </div>
             <div className={cx(s.gridOneHalf, s.slideshowDownload)}>
-              <div className={s.downloadThird}>
+              <div className={s.downloadHalf}>
                 <h4>Design Files</h4>
                 <p>Sketch & Adobe Illustrator files for design</p>
                 <img src={Illustrator} /> <img src={Sketch} /><br />
               </div>
-              <div className={s.downloadThird}>
+              <div className={s.downloadHalf}>
                 <h4>Developer</h4>
                 <p>React components and SASS styling files</p>
                 <img src={Sass} className={s.sassIcon} /> <img src={ReactLogo} /><br />
               </div>
-              <div className={cx(s.downloadThird)}>
-                <h4>Production</h4>
-                <p>Minifed and ready to use static elements</p>
-                <img src={Html} className={s.htmlIcon} /> <img src={Css} className={s.cssIcon} /> <img src={Javascript} className={s.jsIcon} /><br />
-              </div>
-              <div className={s.downloadThird}>
+              <div className={s.downloadHalf}>
                 <Button buttonText="download" buttonLink="http://bit.ly/2kvIFC0" />
               </div>
-              <div className={s.downloadThird}>
+              <div className={s.downloadHalf}>
                 <Button buttonText="download" buttonLink="https://github.com/brz0/terminal-ui" />
-              </div>
-              <div className={s.downloadThird}>
-                <div className={s.disableBtnWrap}>
-                  <Button buttonText="soon" buttonLink="" />
-                </div>
               </div>
               <div className={s.downloadSm}>
                 <h4>Downloads</h4>
