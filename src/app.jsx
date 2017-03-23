@@ -3,7 +3,7 @@ import { Router, Route, Link, browserHistory } from 'react-router';
 
 import Grid from './grid/grid.jsx';
 import Components from './components/components.jsx';
-import NoMatch from './noMatch/nomatch.jsx';
+import NoMatch from './noMatch/noMatch.jsx';
 import Layout from './layout.jsx';
 import Slideshow from './slideshow.jsx';
 
