@@ -8,22 +8,18 @@ import Nav from '../nav/nav.jsx'
 
 function terminal() {
 
-  let iT = this.refs.terminal.value;
+  let iT = this.refs.terminal.value.toLowerCase();
 
-  if (iT === 'welcome' || iT === 'Welcome' || iT === 'WELCOME'
-  || iT === 'home' || iT === 'Home' || iT === 'HOME'|| iT === '0') {
+  if (iT === 'welcome' || iT === 'home' || iT === '0') {
     this.context.router.push('/');
   }
-  else if (iT === 'grids' || iT === 'Grids' || iT === 'GRIDS'
-    || iT === 'grid' || iT === 'Grid' || iT === 'GRID'|| iT === '1') {
+  else if (iT === 'grids' || iT === 'grid' || iT === '1') {
     this.context.router.push('/grid');
   }
-  else if (iT === 'component' || iT === 'Component' || iT === 'COMPONENT'
-    || iT === 'components' || iT === 'Components' || iT === 'COMPONENTS'|| iT === '2') {
+  else if (iT === 'component' || iT === 'components' || iT === '2') {
     this.context.router.push('/components');
   }
-  else if (iT === 'download' || iT === 'Download' || iT === 'DOWNLOAD'
-    || iT === 'downloads' || iT === 'Downloads' || iT === 'DOWNLOADS'|| iT === '0') {
+  else if (iT === 'download' || iT === 'downloads' || iT === '0') {
     this.context.router.push('/');
   }
   else {
@@ -55,7 +51,9 @@ export default class Terminal extends React.Component {
       <div className={s.terminalWrap}>
         <i className={cx(materialIcons, s.arrowIcon)}>keyboard_arrow_right</i>
         <form onSubmit={terminal.bind(this)} className={s.terminalForm}>
-          <input className={s.terminalInput} ref='terminal' value={this.state.inputValue} onChange={this.updateInputValue.bind(this)} placeholder={"type " + this.props.page + " and press ↩ to see the next page"} />
+          <input className={s.terminalInput} ref='terminal'
+            value={this.state.inputValue} onChange={this.updateInputValue.bind(this)}
+            placeholder={"type " + this.props.page + " and press ↩ to see the next page"} />
         </form>
         <a href="#"><i className={cx(materialIcons, s.micIcon)}>mic</i></a>
       </div>
