@@ -7,8 +7,8 @@ export default class CardText extends React.Component {
     return(
       <div className={s.cardTextWrap}>
         <div className={s.cardTextInner}>
-          <h2>Card Title</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <h2>{this.props.title}</h2>
+          <p>{this.props.text}</p>
         </div>
       </div>
     )

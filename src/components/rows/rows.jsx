@@ -10,17 +10,17 @@ export default class Rows extends React.Component {
         <Accordion selected="1">
           <Accordion.Section title="Section 1" id="1">
             <p className={s.accordionText}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et cursus dui, id semper lectus, nullam erat turpis.
+              {this.props.textOne}
             </p>
           </Accordion.Section>
           <Accordion.Section title="Section 2" id="2">
             <p className={s.accordionText}>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              {this.props.textTwo}
             </p>
           </Accordion.Section>
           <Accordion.Section title="Section 3" id="3">
             <p className={s.accordionText}>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              {this.props.textThree}
             </p>
           </Accordion.Section>
         </Accordion>

@@ -6,7 +6,8 @@ export default class Slider extends React.Component {
   render() {
     return(
       <div className={s.sliderWrap}>
-        <input className={s.sliderInput} type="range" />
+        <input className={s.sliderInput} type="range"
+          id={this.props.id} name={this.props.name} />
       </div>
     )
   }

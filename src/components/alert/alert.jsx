@@ -22,9 +22,9 @@ export default class Alert extends React.Component {
         <a href="#" onClick={this.click.bind(this)} className={s.alertCloseLink}>
           <i className={cx(materialIcons, s.alertClose)}>close</i>
         </a>
-        <h3>Alert!!</h3>
-        <a href="#" className={s.alertBtn}>SAVE</a>
-        <a href="#" className={s.alertBtn} onClick={this.click.bind(this)}>CLOSE</a>
+        <h3>{this.props.title}</h3>
+        <a href={this.props.btnLeftLink} className={s.alertBtn}>{this.props.btnLeft}</a>
+        <a href={this.props.btnRightLink} className={s.alertBtn} onClick={this.click.bind(this)}>{this.props.btnRight}</a>
       </div>
     )
   }

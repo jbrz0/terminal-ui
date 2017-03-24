@@ -3,16 +3,6 @@ import cx from 'classnames';
 import s from './weather.scss';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
-// Weather Icons
-import Sunny from '../../img/weather-01.svg';
-import Rain from '../../img/weather-02.svg';
-import RainCloud from '../../img/weather-03.svg';
-import Thunder from '../../img/weather-04.svg';
-import Night from '../../img/weather-05.svg';
-import SnowCloud from '../../img/weather-06.svg';
-import Snow from '../../img/weather-07.svg';
-import Tornado from '../../img/weather-08.svg';
-
 export default class Weather extends React.Component {
 
   render() {
@@ -23,29 +13,29 @@ export default class Weather extends React.Component {
           selectedIndex={0} className={s.weatherRoot} >
           <TabList className={s.weatherTab}>
             <Tab>
-              <img src={Sunny} />
-              <span>MON</span>
+              <img src={this.props.weatherOne} />
+              <span>{this.props.tabOne}</span>
             </Tab>
             <Tab>
-              <img src={Rain} />
-              <span>TUE</span>
+              <img src={this.props.weatherTwo} />
+              <span>{this.props.tabTwo}</span>
             </Tab>
             <Tab>
-              <img src={Snow} />
-              <span>WED</span>
+              <img src={this.props.weatherThree} />
+              <span>{this.props.tabThree}</span>
             </Tab>
           </TabList>
           <TabPanel className={s.weatherTabPanel}>
-            <img src={Sunny} className={s.weatherIcon} />
-            &nbsp;25°
+            <img src={this.props.weatherOne} className={s.weatherIcon} />
+            &nbsp;{this.props.tempOne}°
           </TabPanel>
           <TabPanel className={s.weatherTabPanel}>
-            <img src={Rain} className={s.weatherIcon} />
-            &nbsp;15°
+            <img src={this.props.weatherTwo} className={s.weatherIcon} />
+            &nbsp;{this.props.tempTwo}°
           </TabPanel>
           <TabPanel className={s.weatherTabPanel}>
-            <img src={Snow} className={s.weatherIcon} />
-            &nbsp;-22°
+            <img src={this.props.weatherThree} className={s.weatherIcon} />
+            &nbsp;{this.props.tempThree}°
           </TabPanel>
         </Tabs>
       </div>

@@ -7,9 +7,9 @@ export default class CardTextDate extends React.Component {
     return(
       <div className={s.cardTextWrap}>
         <div className={s.cardTextInner}>
-          <h2>Card Title</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <span>11/17/2017</span>
+          <h2>{this.props.title}</h2>
+          <p>{this.props.text}</p>
+          <span>{this.props.date}</span>
         </div>
       </div>
     )

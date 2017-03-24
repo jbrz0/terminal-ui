@@ -8,8 +8,8 @@ export default class InputLine extends React.Component {
   render() {
     return(
       <div className={s.inputLineRoot}>
-        <i className={cx(materialIcons, s.inputLineIcon)}>search</i>
-        <input className={s.inputLineBox} placeholder="Input box" />
+        <i className={cx(materialIcons, s.inputLineIcon)}>{this.props.icon}</i>
+        <input className={s.inputLineBox} placeholder={this.props.placeholder} />
       </div>
     )
   }

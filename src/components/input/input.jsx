@@ -6,7 +6,7 @@ export default class Input extends React.Component {
   render() {
     return(
       <div className={s.inputRoot}>
-        <input className={s.inputBox} placeholder="Input box" />
+        <input className={s.inputBox} placeholder={this.props.placeholder} />
       </div>
     )
   }

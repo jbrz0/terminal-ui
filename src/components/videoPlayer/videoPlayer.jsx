@@ -10,7 +10,8 @@ export default class videoPlayer extends React.Component {
     return(
       <div className={s.videoPlayerRoot}>
         <div className={s.videoWrapper}>
-          <iframe className={s.videoIframe} width="560" height="349" src="https://www.youtube.com/embed/hoj4Qv7nrN8" frameBorder="0" allowFullScreen></iframe>
+          <iframe className={s.videoIframe} width="560" height="349" src={this.props.children}
+            frameBorder="0" allowFullScreen></iframe>
           <div className={s.playBtn}>
             <i className={cx(materialIcons, s.mediaPlayBtn)}>play_arrow</i>
           </div>
